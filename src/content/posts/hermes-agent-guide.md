@@ -93,4 +93,4 @@ Hermes Agent 最值得关注的不是“又一个全能助手”，而是它把 
 - [Hermes Agent 官方 GitHub 仓库](https://github.com/NousResearch/hermes-agent)
 - [Hermes Agent Persistent Memory 文档](https://hermes-agent.nousresearch.com/docs/user-guide/features/memory)
 - [Hermes Agent Skills System 文档](https://hermes-agent.nousresearch.com/docs/user-guide/features/skills)
-- [Hermes Agent v0.15.2 Release](https://github.com/NousResearch/hermes-agent/releases/tag/v0.15.2)
+- [Hermes Agent Releases](https://github.com/NousResearch/hermes-agent/releases)
