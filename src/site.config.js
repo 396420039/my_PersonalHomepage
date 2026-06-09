@@ -1,6 +1,6 @@
 export const siteConfig = {
   siteTitle: 'AI 工程手记',
-  ownerName: '小吕的个人主页',
+  ownerName: '小吕的主页',
   initials: 'AI',
   role: 'AI Engineer / Agent Builder / LLM Systems',
   location: 'Shanghai, China',
