@@ -1,6 +1,6 @@
 ---
 title: "LLaMA-Factory 微调工作流：统一配置不代表可以跳过实验设计"
-date: "2026-06-06"
+date: "2026-01-24"
 summary: "LLaMA-Factory 集成多种模型与训练方法，适合快速实验，但数据模板、超参数和评测仍需显式管理。"
 tags: ["LLaMA-Factory", "模型微调"]
 featured: false

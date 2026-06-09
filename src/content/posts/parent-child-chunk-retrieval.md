@@ -1,6 +1,6 @@
 ---
 title: "Parent-Child Chunk：用小块召回，用大块回答"
-date: "2026-06-08"
+date: "2026-04-23"
 summary: "小文本块更容易精确匹配，大父块保留完整语境；两级结构可以兼顾召回与生成。"
 tags: ["RAG", "文档切分"]
 featured: false

@@ -1,6 +1,6 @@
 ---
 title: "BERT 与 StructBERT 文本分类：预训练表示如何进入业务模型"
-date: "2026-06-06"
+date: "2026-02-10"
 summary: "BERT 用双向 Transformer 学习上下文表示，StructBERT 进一步加入词序和句序结构任务。"
 tags: ["BERT", "文本分类"]
 featured: false

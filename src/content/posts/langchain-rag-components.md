@@ -1,6 +1,6 @@
 ---
 title: "LangChain 组件化 RAG：让加载、检索与生成各自可替换"
-date: "2026-06-09"
+date: "2026-05-29"
 summary: "把 RAG 拆成文档处理、索引、检索和生成组件，才能独立评测并持续替换薄弱环节。"
 tags: ["LangChain", "RAG"]
 featured: false

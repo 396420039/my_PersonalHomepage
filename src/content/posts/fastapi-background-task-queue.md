@@ -1,6 +1,6 @@
 ---
 title: "后台任务怎么选：FastAPI BackgroundTasks 不是万能队列"
-date: "2026-06-09"
+date: "2026-05-30"
 summary: "短小的请求后操作可以留在进程内，耗时、可重试和必须完成的任务应进入持久化队列。"
 tags: ["FastAPI", "任务队列"]
 featured: false

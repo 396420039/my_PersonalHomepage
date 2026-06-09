@@ -1,6 +1,6 @@
 ---
 title: "fastText 分类基线：训练快、部署轻，先验证问题是否可分"
-date: "2026-06-06"
+date: "2026-02-05"
 summary: "词袋、子词与线性分类器构成了强而高效的文本基线，适合快速检查数据和标签质量。"
 tags: ["fastText", "文本分类"]
 featured: false

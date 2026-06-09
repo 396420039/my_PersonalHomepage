@@ -1,6 +1,6 @@
 ---
 title: "Cross-Encoder 重排：把召回候选重新读一遍"
-date: "2026-06-08"
+date: "2026-05-10"
 summary: "双塔模型负责快速找候选，Cross-Encoder 联合编码问题与文档，用更高计算成本换取更准排序。"
 tags: ["RAG", "Rerank"]
 featured: false

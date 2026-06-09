@@ -1,6 +1,6 @@
 ---
 title: "LangGraph 状态与持久化：把 Agent 执行过程变成可恢复的图"
-date: "2026-06-09"
+date: "2026-05-21"
 summary: "状态图不仅描述节点跳转，还要定义状态合并、检查点、线程隔离与失败恢复。"
 tags: ["LangGraph", "Agent"]
 featured: false

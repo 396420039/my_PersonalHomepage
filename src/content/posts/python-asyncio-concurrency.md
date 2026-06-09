@@ -1,6 +1,6 @@
 ---
 title: "Python asyncio 并发：先分清等待、并行与背压"
-date: "2026-06-09"
+date: "2026-05-20"
 summary: "异步不是让 CPU 计算自动变快，而是让程序在等待网络和磁盘时继续处理其他任务。"
 tags: ["Python", "异步编程"]
 featured: false

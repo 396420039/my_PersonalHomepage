@@ -1,6 +1,6 @@
 ---
 title: "TF-IDF + Jieba：中文文本分类最值得保留的可解释基线"
-date: "2026-06-06"
+date: "2026-01-01"
 summary: "分词、行业词典、n-gram 与线性模型能快速建立可解释基线，也能发现数据泄漏。"
 tags: ["TF-IDF", "Jieba"]
 featured: false

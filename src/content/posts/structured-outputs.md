@@ -1,6 +1,6 @@
 ---
 title: "结构化输出：把 JSON 格式要求变成可验证契约"
-date: "2026-05-27"
+date: "2025-10-16"
 summary: "Schema 约束能解决格式漂移，但业务正确性仍需要校验、重试和清晰的数据边界。"
 tags: ["LLM", "结构化输出"]
 featured: false

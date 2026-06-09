@@ -1,6 +1,6 @@
 ---
 title: "Neo4j 与 GraphRAG：当问题需要沿关系找到答案"
-date: "2026-06-07"
+date: "2026-02-24"
 summary: "知识图谱适合多跳关系、实体约束与可解释路径，并可与向量检索组合成 GraphRAG。"
 tags: ["Neo4j", "GraphRAG"]
 featured: false

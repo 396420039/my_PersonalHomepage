@@ -1,6 +1,6 @@
 ---
 title: "Qwen3 + vLLM 部署：从模型卡到可压测的 OpenAI 兼容服务"
-date: "2026-06-06"
+date: "2026-01-12"
 summary: "部署前要核对模型模式、聊天模板、精度、并行策略与上下文长度，再用真实流量分布压测。"
 tags: ["Qwen3", "vLLM"]
 featured: true

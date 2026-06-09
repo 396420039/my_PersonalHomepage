@@ -1,6 +1,6 @@
 ---
 title: "RAG 检索优化：给每个文本块补回上下文"
-date: "2026-06-02"
+date: "2025-12-03"
 summary: "传统切块会丢失文档语境。Contextual Retrieval 通过补充块级说明，改善语义和关键词检索。"
 tags: ["RAG", "检索"]
 featured: false

@@ -1,6 +1,6 @@
 ---
 title: "vLLM 与 PagedAttention：把 KV Cache 当作分页内存管理"
-date: "2026-06-07"
+date: "2026-02-14"
 summary: "vLLM 通过分页管理 KV Cache，减少碎片与预留浪费，让更多请求共享有限显存。"
 tags: ["vLLM", "推理部署"]
 featured: true

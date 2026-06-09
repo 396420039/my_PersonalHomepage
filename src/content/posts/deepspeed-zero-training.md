@@ -1,6 +1,6 @@
 ---
 title: "DeepSpeed ZeRO：把训练状态拆到多张 GPU"
-date: "2026-06-07"
+date: "2026-04-01"
 summary: "ZeRO 分阶段切分优化器状态、梯度和参数，降低单卡显存压力，并可进一步卸载到 CPU 或 NVMe。"
 tags: ["DeepSpeed", "分布式训练"]
 featured: false

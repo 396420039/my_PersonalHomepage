@@ -1,6 +1,6 @@
 ---
 title: "最近很火的 Hermes Agent（爱马仕），到底特别在哪里？"
-date: "2026-06-05"
+date: "2025-12-20"
 summary: "从记忆、Skills、自我改进闭环和消息网关出发，拆解 Nous Research 开源智能体 Hermes Agent。"
 tags: ["Agent", "Hermes", "开源项目"]
 featured: true

@@ -1,6 +1,6 @@
 ---
 title: "Embedding 语义检索：向量相近不等于业务相关"
-date: "2026-06-08"
+date: "2026-05-01"
 summary: "选择嵌入模型时要同时考虑领域、语言、距离函数、文本长度和真实查询评测。"
 tags: ["Embedding", "RAG"]
 featured: false

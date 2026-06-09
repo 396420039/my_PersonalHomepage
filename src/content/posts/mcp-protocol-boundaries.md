@@ -1,6 +1,6 @@
 ---
 title: "MCP 协议边界：统一上下文与工具接入，不替代业务权限"
-date: "2026-06-06"
+date: "2026-01-15"
 summary: "MCP 用标准消息连接 Host、Client 与 Server，但认证、授权、审计和高风险确认仍需系统设计。"
 tags: ["MCP", "协议"]
 featured: false

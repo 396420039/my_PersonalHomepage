@@ -1,6 +1,6 @@
 ---
 title: "生产级 Prompt Engineering：先写任务契约，再堆技巧"
-date: "2026-06-08"
+date: "2026-04-16"
 summary: "稳定 Prompt 要明确目标、输入边界、输出契约、证据规则和失败处理，并通过评测集持续回归。"
 tags: ["Prompt", "LLM"]
 featured: false

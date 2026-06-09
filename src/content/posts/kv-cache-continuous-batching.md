@@ -1,6 +1,6 @@
 ---
 title: "KV Cache 与连续批处理：大模型在线吞吐的两个关键点"
-date: "2026-06-07"
+date: "2026-03-17"
 summary: "缓存历史注意力计算减少重复工作，连续批处理则让不同长度请求动态共享 GPU。"
 tags: ["KV Cache", "推理优化"]
 featured: false

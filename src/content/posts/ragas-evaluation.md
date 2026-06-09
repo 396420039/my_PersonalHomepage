@@ -1,6 +1,6 @@
 ---
 title: "RAGAS 自动评测：把检索与生成指标分开解释"
-date: "2026-06-06"
+date: "2026-01-04"
 summary: "Faithfulness、Answer Relevancy 与 Context 指标观察不同故障，分数必须结合人工抽检和固定数据集。"
 tags: ["RAGAS", "评测"]
 featured: true

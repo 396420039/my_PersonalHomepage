@@ -1,6 +1,6 @@
 ---
 title: "为 Agent 设计工具：接口清楚比工具数量更重要"
-date: "2026-05-30"
+date: "2025-11-15"
 summary: "Agent 工具不是普通 API 的机械包装。名称、边界、返回上下文和评测共同决定模型能否正确使用它。"
 tags: ["工具调用", "Agent"]
 featured: false

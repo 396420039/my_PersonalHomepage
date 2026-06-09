@@ -1,6 +1,6 @@
 ---
 title: "构建 Agent，先从简单可组合的工作流开始"
-date: "2026-06-03"
+date: "2025-12-12"
 summary: "不是每个问题都需要自治 Agent。先判断任务结构，再选择链式、路由、并行或动态规划。"
 tags: ["Agent", "架构"]
 featured: true

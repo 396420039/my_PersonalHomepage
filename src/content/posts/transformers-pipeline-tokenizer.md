@@ -1,6 +1,6 @@
 ---
 title: "Transformers 推理基础：Pipeline 方便，但 Tokenizer 决定真实输入"
-date: "2026-06-09"
+date: "2026-05-18"
 summary: "快速原型可以从 Pipeline 开始，生产排错则必须理解分词、截断、批处理和模型输入张量。"
 tags: ["Transformers", "模型推理"]
 featured: false

@@ -1,6 +1,6 @@
 ---
 title: "A2A 协议：让不同框架的 Agent 交换任务与结果"
-date: "2026-06-06"
+date: "2026-02-13"
 summary: "A2A 面向 Agent 之间的发现、任务委派与状态更新，与 MCP 的工具和上下文接入侧重点不同。"
 tags: ["A2A", "多Agent"]
 featured: false

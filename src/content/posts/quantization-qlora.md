@@ -1,6 +1,6 @@
 ---
 title: "模型量化与 QLoRA：省显存不等于零损失"
-date: "2026-06-07"
+date: "2026-02-19"
 summary: "8-bit 与 4-bit 量化能降低模型内存，QLoRA 进一步在量化基座上训练 Adapter。"
 tags: ["模型量化", "QLoRA"]
 featured: false

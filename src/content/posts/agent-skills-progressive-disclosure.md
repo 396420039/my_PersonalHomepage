@@ -1,6 +1,6 @@
 ---
 title: "Agent Skills：用渐进披露封装团队经验"
-date: "2026-05-28"
+date: "2025-10-26"
 summary: "把说明、脚本和参考资料组织成可发现的能力包，让通用 Agent 在需要时加载领域知识。"
 tags: ["Agent", "Skills"]
 featured: false

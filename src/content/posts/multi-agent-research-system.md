@@ -1,6 +1,6 @@
 ---
 title: "多 Agent 研究系统：什么时候并行真的有价值"
-date: "2026-06-01"
+date: "2025-11-27"
 summary: "主 Agent 负责规划与汇总，子 Agent 并行探索独立方向。收益来自更大的搜索覆盖，也伴随明显成本。"
 tags: ["Agent", "多Agent"]
 featured: false
