@@ -97,8 +97,8 @@ function scrollToSection(id) {
           <div class="orbit orbit-one"></div>
           <div class="orbit orbit-two"></div>
           <div class="core-node">
-            <span>{{ curatedArticles.length }}</span>
-            <small>SIGNALS</small>
+            <span>{{ posts.length + curatedArticles.length }}</span>
+            <small>TOTAL NOTES</small>
           </div>
         </div>
 
@@ -112,8 +112,8 @@ function scrollToSection(id) {
             <strong>1–2 / WK</strong>
           </div>
           <div>
-            <small>LOCATION</small>
-            <strong>SH</strong>
+            <small>NEW</small>
+            <strong>+{{ curatedArticles.length }}</strong>
           </div>
         </div>
       </aside>
@@ -165,9 +165,9 @@ function scrollToSection(id) {
       <div class="section-intro library-intro">
         <div>
           <p class="section-kicker">02 / CURATED SIGNALS</p>
-          <h2>100 篇精选阅读</h2>
+          <h2>精选阅读</h2>
         </div>
-        <p>100 篇均为可核对的 AI 技术原文，来自官方技术博客或公开技术平台。中文标题为译写，保留英文原标题、来源站点与原文链接；每周随机 1–2 篇，从今天向过去归档。</p>
+        <p>在原有 {{ posts.length }} 篇个人文章基础上，新增 {{ curatedArticles.length }} 篇可核对的 AI 技术原文。中文标题为译写，保留英文原标题、来源站点与原文链接；每周随机 1–2 篇，从今天向过去归档。</p>
       </div>
 
       <div class="schedule-console">

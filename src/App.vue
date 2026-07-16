@@ -26,7 +26,7 @@ async function goToSection(id) {
 
       <nav class="nav-links" aria-label="主要链接">
         <a href="/#/" @click.prevent="goToSection('field-notes')">原创</a>
-        <a href="/#/" @click.prevent="goToSection('signal-library')">精选库</a>
+        <a href="/#/" @click.prevent="goToSection('signal-library')">精选阅读</a>
         <a :href="`mailto:${siteConfig.email}`">联系</a>
       </nav>
 
