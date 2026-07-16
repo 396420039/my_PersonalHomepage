@@ -14,7 +14,7 @@ markdown.renderer.rules.fence = (tokens, index, options, env, self) => {
   if (token.info.trim() === 'mermaid') {
     const diagram = markdown.utils.escapeHtml(token.content);
     return `<figure class="article-diagram">
-      <div class="diagram-label">图形说明</div>
+      <div class="diagram-label">SYSTEM DIAGRAM</div>
       <div class="mermaid">${diagram}</div>
     </figure>`;
   }
