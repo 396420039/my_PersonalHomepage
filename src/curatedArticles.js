@@ -1,4 +1,4 @@
-export const curatedArticles = [
+const sourcedArticles = [
   { id: 'signal-001', title: 'NVIDIA Nemotron 3 Embed Ranks #1 Overall on RTEB, Advancing Agentic Retrieval', url: 'https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb', source: 'Hugging Face', topic: '检索与 RAG', scheduledDate: '2026-07-21' },
   { id: 'signal-002', title: 'Building a restaurant telephony AI host with Amazon Bedrock AgentCore and Amazon Nova 2 Sonic', url: 'https://aws.amazon.com/blogs/machine-learning/building-a-restaurant-telephony-ai-host-with-amazon-bedrock-agentcore-and-amazon-nova-2-sonic/', source: 'AWS ML Blog', topic: 'Agent 工程', scheduledDate: '2026-07-24' },
   { id: 'signal-003', title: 'Building scalable AI agents with modular prompt transpilation', url: 'https://developers.googleblog.com/building-scalable-ai-agents-with-modular-prompt-transpilation/', source: 'Google Developers', topic: 'Agent 工程', scheduledDate: '2026-07-28' },
@@ -20,7 +20,7 @@ export const curatedArticles = [
   { id: 'signal-019', title: 'Model Routing Is Simple. Until It Isn’t.', url: 'https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt', source: 'Hugging Face', topic: 'Agent 工程', scheduledDate: '2026-09-22' },
   { id: 'signal-020', title: 'Monitor Amazon SageMaker Pipelines cross-account with custom Amazon CloudWatch dashboards', url: 'https://aws.amazon.com/blogs/machine-learning/monitor-amazon-sagemaker-pipelines-cross-account-with-custom-amazon-cloudwatch-dashboards/', source: 'AWS ML Blog', topic: 'Agent 工程', scheduledDate: '2026-09-25' },
   { id: 'signal-021', title: 'Bridging the Domain Gap: AI Race Coach built with Antigravity and Gemini', url: 'https://developers.googleblog.com/bridging-the-domain-gap-ai-race-coach-built-with-antigravity-and-gemini/', source: 'Google Developers', topic: 'Agent 工程', scheduledDate: '2026-09-29' },
-  { id: 'signal-022', title: 'Building Faster Cryptography with Carryless Multiplication in NVIDIA CUDA 13.3', url: 'https://developer.nvidia.com/blog/building-faster-cryptography-with-carryless-multiplication-in-nvidia-cuda-13-3/', source: 'NVIDIA Developer', topic: '推理与性能', scheduledDate: '2026-10-02' },
+  { id: 'signal-022', title: 'Holo3.1: Fast & Local Computer Use Agents', url: 'https://huggingface.co/blog/Hcompany/holo31', source: 'Hugging Face', topic: 'Agent 工程' },
   { id: 'signal-023', title: 'Content Independence Day, one year on: building the business model for the agentic Internet', url: 'https://blog.cloudflare.com/agentic-internet-bot-report/', source: 'Cloudflare', topic: 'Agent 工程', scheduledDate: '2026-10-06' },
   { id: 'signal-024', title: 'Memora: A Harmonic Memory Representation Balancing Abstraction and Specificity', url: 'https://www.microsoft.com/en-us/research/blog/memora-a-harmonic-memory-representation-balancing-abstraction-and-specificity/', source: 'Microsoft Research', topic: 'Agent 工程', scheduledDate: '2026-10-09' },
   { id: 'signal-025', title: 'Introducing Real World VoiceEQ: Measuring the human quality of voice AI', url: 'https://huggingface.co/blog/real-world-voiceeq', source: 'Hugging Face', topic: '多模态', scheduledDate: '2026-10-13' },
@@ -39,7 +39,7 @@ export const curatedArticles = [
   { id: 'signal-038', title: 'Scaling medical content review at Flo Health with Amazon Bedrock – Part 2', url: 'https://aws.amazon.com/blogs/machine-learning/scaling-medical-content-review-at-flo-health-with-amazon-bedrock-part-2/', source: 'AWS ML Blog', topic: 'Agent 工程', scheduledDate: '2026-11-27' },
   { id: 'signal-039', title: 'Driving the Agent Quality Flywheel from Your Coding Agent', url: 'https://developers.googleblog.com/driving-the-agent-quality-flywheel-from-your-coding-agent/', source: 'Google Developers', topic: 'Agent 工程', scheduledDate: '2026-12-01' },
   { id: 'signal-040', title: 'Post-Train NVIDIA Cosmos 3 in One Day Using Agent Skills', url: 'https://developer.nvidia.com/blog/post-train-nvidia-cosmos-3-in-one-day-using-agent-skills/', source: 'NVIDIA Developer', topic: '训练与评测', scheduledDate: '2026-12-04' },
-  { id: 'signal-041', title: 'Growing the Cloudflare AI team with talent from Ensemble AI', url: 'https://blog.cloudflare.com/ensemble-ai-talent-joins-cloudflare/', source: 'Cloudflare', topic: 'Agent 工程', scheduledDate: '2026-12-08' },
+  { id: 'signal-041', title: 'Harness, Scaffold, and the AI Agent Terms Worth Getting Right', url: 'https://huggingface.co/blog/agent-glossary', source: 'Hugging Face', topic: 'Agent 工程' },
   { id: 'signal-042', title: 'Extending Human Intelligence Through AI', url: 'https://www.microsoft.com/en-us/research/blog/extending-human-intelligence-through-ai/', source: 'Microsoft Research', topic: 'Agent 工程', scheduledDate: '2026-12-11' },
   { id: 'signal-043', title: 'From Hugging Face to Amazon SageMaker Studio in one click', url: 'https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio', source: 'Hugging Face', topic: 'Agent 工程', scheduledDate: '2026-12-15' },
   { id: 'signal-044', title: 'ScienceSoft’s HIPAA-compliant AI voice scheduler built on AWS', url: 'https://aws.amazon.com/blogs/machine-learning/sciencesofts-hipaa-compliant-ai-voice-scheduler-built-on-aws/', source: 'AWS ML Blog', topic: '多模态', scheduledDate: '2026-12-18' },
@@ -77,13 +77,13 @@ export const curatedArticles = [
   { id: 'signal-076', title: 'The AI engineering stack we built internally — on the platform we ship', url: 'https://blog.cloudflare.com/internal-ai-engineering-stack/', source: 'Cloudflare', topic: 'Agent 工程', scheduledDate: '2027-04-09' },
   { id: 'signal-077', title: 'DiScoFormer: One transformer for density and score, across distributions', url: 'https://huggingface.co/blog/allenai/discoformer', source: 'Hugging Face', topic: 'Agent 工程', scheduledDate: '2027-04-13' },
   { id: 'signal-078', title: 'Real-time dental image verification with Amazon SageMaker AI at Henry Schein One', url: 'https://aws.amazon.com/blogs/machine-learning/real-time-dental-image-verification-with-amazon-sagemaker-ai-at-henry-schein-one/', source: 'AWS ML Blog', topic: '多模态', scheduledDate: '2027-04-16' },
-  { id: 'signal-079', title: 'A Practical Guide to GPU-Initiated Communication for Molecular Dynamics at Scale', url: 'https://developer.nvidia.com/blog/a-practical-guide-to-gpu-initiated-communication-for-molecular-dynamics-at-scale/', source: 'NVIDIA Developer', topic: '推理与性能', scheduledDate: '2027-04-20' },
+  { id: 'signal-079', title: 'Building Blocks for Foundation Model Training and Inference on AWS', url: 'https://huggingface.co/blog/amazon/foundation-model-building-blocks', source: 'Hugging Face', topic: '训练与评测' },
   { id: 'signal-080', title: 'Run a vLLM Server on HF Jobs in One Command', url: 'https://huggingface.co/blog/vllm-jobs', source: 'Hugging Face', topic: '推理与性能', scheduledDate: '2027-04-23' },
   { id: 'signal-081', title: 'Build a semantic layer for agentic AI on AWS with Stardog and Amazon Bedrock AgentCore', url: 'https://aws.amazon.com/blogs/machine-learning/build-a-semantic-layer-for-agentic-ai-on-aws-with-stardog-and-amazon-bedrock-agentcore/', source: 'AWS ML Blog', topic: 'Agent 工程', scheduledDate: '2027-04-27' },
   { id: 'signal-082', title: 'Create a LangChain Deep Agents Harness Profile for NVIDIA Nemotron 3 Ultra to Improve Performance', url: 'https://developer.nvidia.com/blog/create-a-langchain-deep-agents-harness-profile-for-nvidia-nemotron-3-ultra-to-improve-performance/', source: 'NVIDIA Developer', topic: '推理与性能', scheduledDate: '2027-04-30' },
   { id: 'signal-083', title: 'Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel', url: 'https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel', source: 'Hugging Face', topic: '训练与评测', scheduledDate: '2027-05-04' },
   { id: 'signal-084', title: 'Scaling agentic workflows with native case management in Amazon Quick Automate', url: 'https://aws.amazon.com/blogs/machine-learning/scaling-agentic-workflows-with-native-case-management-in-amazon-quick-automate/', source: 'AWS ML Blog', topic: 'Agent 工程', scheduledDate: '2027-05-07' },
-  { id: 'signal-085', title: 'Running Low-Latency Analytical Workloads with GPU-Accelerated Presto on NVIDIA GB200 NVL72', url: 'https://developer.nvidia.com/blog/running-low-latency-analytical-workloads-with-gpu-accelerated-presto-on-nvidia-gb200-nvl72/', source: 'NVIDIA Developer', topic: '推理与性能', scheduledDate: '2027-05-11' },
+  { id: 'signal-085', title: 'Adding MCP Tools to Reachy Mini', url: 'https://huggingface.co/blog/adding-mcp-tools-to-reachy-mini', source: 'Hugging Face', topic: '多模态' },
   { id: 'signal-086', title: 'Introducing the FFASR Leaderboard: Benchmarking ASR in the Real World', url: 'https://huggingface.co/blog/ffasr-leaderboard', source: 'Hugging Face', topic: '训练与评测', scheduledDate: '2027-05-14' },
   { id: 'signal-087', title: 'Deploying quantized models on Amazon SageMaker AI with Unsloth', url: 'https://aws.amazon.com/blogs/machine-learning/deploying-quantized-models-on-amazon-sagemaker-ai-with-unsloth/', source: 'AWS ML Blog', topic: '推理与性能', scheduledDate: '2027-05-18' },
   { id: 'signal-088', title: 'NVIDIA Vera CPU Boosts AI Factory Throughput to Accelerate Agentic Workloads', url: 'https://developer.nvidia.com/blog/nvidia-vera-cpu-boosts-ai-factory-throughput-to-accelerate-agentic-workloads/', source: 'NVIDIA Developer', topic: 'Agent 工程', scheduledDate: '2027-05-21' },
@@ -100,5 +100,147 @@ export const curatedArticles = [
   { id: 'signal-099', title: 'From the Hugging Face Hub to robot hardware with Strands Agents and LeRobot', url: 'https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware', source: 'Hugging Face', topic: '多模态', scheduledDate: '2027-06-29' },
   { id: 'signal-100', title: 'Agentic Resource Discovery: Let agents search', url: 'https://huggingface.co/blog/agentic-resource-discovery-launch', source: 'Hugging Face', topic: '检索与 RAG', scheduledDate: '2027-07-02' },
 ];
+
+const chineseTitles = [
+  'NVIDIA Nemotron 3 Embed 登顶 RTEB：推进智能体检索',
+  '用 Amazon Bedrock AgentCore 与 Nova 2 Sonic 构建餐厅电话 AI 接待员',
+  '用模块化提示词转译构建可扩展的 AI 智能体',
+  '将上下文感知视频 AI 智能体接入企业工作流',
+  'Precursor：用连续客户端信号识别智能体行为',
+  'Aurora 1.5：面向天气与地球系统扩展开源基础模型',
+  '新一代模型，依然保持同样的优势',
+  '用 AWS 构建服务于房地产金融智能体的 AI 文档智能方案',
+  'Gemini 企业智能体平台：用并行 Web 搜索实现内容溯源',
+  '通过 NVIDIA BlueField 的极致协同设计扩展智能体 AI 工厂',
+  '让 AI 搜索更智能',
+  'Flint：面向 AI 时代的可视化语言',
+  '从 Shippy 的构建过程学习如何开发智能体',
+  '智能体视觉：用 Amazon Bedrock 与 MCP 构建视觉智能',
+  'LiteRT.js：Google 的高性能 Web 端 AI 推理方案',
+  '借助 AI 智能体更快开发轻量级 USD 运行时',
+  '网站自主权：面向 AI 流量的新控制选项',
+  'SkillOpt：把智能体技能作为可训练参数',
+  '模型路由看似简单，直到它不再简单',
+  '用自定义 CloudWatch 仪表板跨账户监控 SageMaker 流水线',
+  '用 Antigravity 与 Gemini 构建 AI 赛车教练',
+  'Holo 3.1：快速、本地运行的计算机操作智能体',
+  '智能体互联网的商业模式：内容独立日一周年复盘',
+  'Memora：兼顾抽象与具体的谐波记忆表示',
+  'VoiceEQ：衡量语音 AI 的真实人类体验质量',
+  '用 Strands Agents 与 Amazon Bedrock 构建多智能体社交智能',
+  '训练中主动终止 TPU 后数秒恢复：MaxText 弹性训练入门',
+  '五千多名 Kaggle 参赛者带来的 AI 推理改进经验',
+  '面向 AI 智能体的 Cloudflare 临时账户',
+  '用 AI 驱动的解释与实验理解大脑',
+  'PyTorch 性能分析（三）：注意力机制专项剖析',
+  '用 Amazon Nova Act 的智能体 QA 自动化加速软件交付',
+  '用 Genkit 构建智能体全栈应用',
+  '用强化学习智能体技能与 NVIDIA NeMo 运行自动研究工作流',
+  '把更多智能体 Harness 与框架带到 Cloudflare：从 Flue 开始',
+  'Data Formulator 0.7：面向企业数据的 AI 分析',
+  '原生速度的 vLLM Transformers 建模后端',
+  '用 Amazon Bedrock 扩展医疗内容审核',
+  '从编码智能体推动智能体质量飞轮',
+  '使用智能体技能在一天内完成 NVIDIA Cosmos 3 后训练',
+  'Harness、Scaffold 与 AI 智能体术语辨析',
+  '用 AI 延伸人类智能',
+  '一键从 Hugging Face 进入 Amazon SageMaker Studio',
+  '基于 AWS 构建符合 HIPAA 的 AI 语音预约系统',
+  '用 ADK Go 2.0 构建可靠的多智能体应用',
+  '用引导式生成模型估计极端事件发生概率',
+  '防御前沿网络攻击模型：Cloudflare 的“客户零号”架构',
+  '在 Foundry 托管算力上运行 Hugging Face 模型',
+  'OpenAI GPT-5.6 Sol、Terra 与 Luna 登陆 Amazon Bedrock',
+  '用 Google ADK 与 A2A 构建跨语言多智能体团队',
+  '如何评估面向真实部署的通用机器人策略',
+  'AI 成本失控怎么办：用 Cloudflare 限制 AI 网关支出',
+  '跨云运行 AI 工作负载，并用 Hugging Face 实现零出口费用存储',
+  '当大脑的工作方式不同时，AI 是无障碍能力而非奢侈品',
+  'A2A 如何构建智能体协作世界',
+  '通过主机卸载降低 JAX 大模型训练的高带宽显存瓶颈',
+  'Cloudflare 统一数据平台与其上的 AI 智能体是如何构建的',
+  'LeRobot 0.6：想象、评估与改进',
+  '用 Amazon Bedrock 构建 Bluesight 的智能体 AI 方案',
+  'A2UI 与 MCP Apps：结合声明式和定制智能体界面',
+  'NVIDIA CUDA 内核融合：优化内存流量与启动开销',
+  'Cloudflare 推出 Claude 托管智能体',
+  'Hugging Face 与 Cerebras 让 Gemma 4 支持实时语音 AI',
+  '用 AgentCore Gateway 为多租户智能体实现代表用户的令牌交换',
+  '智能体资源发现规范正式发布',
+  'AI 模型协同设计：面向硬件的大模型设计',
+  '智能体现在可以创建 Cloudflare 账户、购买域名并完成部署',
+  'ScarfBench：面向企业 Java 框架迁移的 AI 智能体基准',
+  '在 Amazon SageMaker AI 中使用生成式 AI 推理推荐界面',
+  'DiffusionGemma 开发者指南',
+  '用 NVIDIA BioNeMo 智能体工具包加速端到端共折叠',
+  '大规模编排 AI 代码审查',
+  '在 Hugging Face 模型页面展示 Every Eval Ever 评测结果',
+  '用 SageMaker AI 无服务器模型定制微调 NVIDIA Nemotron 3',
+  '用 NVIDIA NeMo 为金融 AI 研究生成合成数据',
+  'Cloudflare 内部 AI 工程栈：构建于其自有平台之上',
+  'DiScoFormer：跨分布统一密度与得分建模的 Transformer',
+  '用 Amazon SageMaker AI 实时验证牙科影像',
+  '在 AWS 上训练与推理基础模型的构建模块',
+  '一条命令在 Hugging Face Jobs 上运行 vLLM 服务',
+  '用 Stardog 与 AgentCore 为 AWS 智能体 AI 构建语义层',
+  '为 NVIDIA Nemotron 3 Ultra 创建 LangChain Deep Agents Harness 配置',
+  '用 NVIDIA NeMo AutoModel 加速 Transformers 微调',
+  '用 Amazon Quick Automate 的原生案例管理扩展智能体工作流',
+  '为 Reachy Mini 添加 MCP 工具',
+  'FFASR 排行榜：在真实环境中评测自动语音识别',
+  '用 Unsloth 在 Amazon SageMaker AI 上部署量化模型',
+  'NVIDIA Vera CPU 提升 AI 工厂吞吐并加速智能体负载',
+  '借助 AI、开放工具与人工审核实现 huggingface_hub 每周发布',
+  '用 NVIDIA Isaac GR00T 端到端开发人形机器人策略',
+  '在 Transformers.js 中试验跨源存储 API',
+  '用 AI 原生无线接入网与 NVIDIA AI Aerial 提升频谱效率',
+  '用本地模型免费分流 OpenClaw 仓库问题',
+  '用 NVIDIA Nemotron 构建工业告警管理分析智能体',
+  'MosaicLeaks：研究智能体能否保守秘密',
+  '用非均匀张量并行提升大规模大模型训练有效吞吐',
+  '超越 LoRA：挑战最流行的微调方法',
+  '它足够“智能体化”吗：在自有工具上评测开源模型',
+  '从 Hugging Face Hub 到机器人硬件：Strands Agents 与 LeRobot 实践',
+  '智能体资源发现：让智能体学会搜索',
+];
+
+function buildPublicationDates(count) {
+  const currentWeekMonday = new Date(Date.UTC(2026, 6, 13));
+  const dates = [];
+  let seed = 20260717;
+  let week = 0;
+
+  const random = () => {
+    seed = (seed * 1664525 + 1013904223) >>> 0;
+    return seed / 4294967296;
+  };
+
+  while (dates.length < count) {
+    const weeklyCount = random() < 0.5 ? 1 : 2;
+    const offsets = new Set(week === 0 ? [4] : []);
+    const maxOffset = week === 0 ? 4 : 7;
+    while (offsets.size < weeklyCount) offsets.add(Math.floor(random() * maxOffset));
+
+    for (const offset of [...offsets].sort((a, b) => b - a)) {
+      if (dates.length >= count) break;
+      const date = new Date(currentWeekMonday);
+      date.setUTCDate(date.getUTCDate() - week * 7 + offset);
+      dates.push(date.toISOString().slice(0, 10));
+    }
+    week += 1;
+  }
+
+  return dates;
+}
+
+const publicationDates = buildPublicationDates(sourcedArticles.length);
+
+export const curatedArticles = sourcedArticles.map((article, index) => ({
+  ...article,
+  title: chineseTitles[index],
+  originalTitle: article.title,
+  scheduledDate: publicationDates[index],
+  citation: `${article.source} 原文页面`,
+}));
 
 export const curatedTopics = ['全部', ...new Set(curatedArticles.map((article) => article.topic))];

@@ -33,6 +33,11 @@ const filteredCurated = computed(() =>
 
 const visibleCurated = computed(() => filteredCurated.value.slice(0, visibleCount.value));
 const nextSignals = computed(() => curatedArticles.slice(0, 3));
+const archiveRange = computed(() => {
+  const first = curatedArticles[0].scheduledDate.slice(0, 7).replace('-', '.');
+  const last = curatedArticles.at(-1).scheduledDate.slice(0, 7).replace('-', '.');
+  return `${last} → ${first}`;
+});
 
 watch([activeTopic, query], () => {
   visibleCount.value = 12;
@@ -104,7 +109,7 @@ function scrollToSection(id) {
           </div>
           <div>
             <small>CADENCE</small>
-            <strong>2 / WK</strong>
+            <strong>1–2 / WK</strong>
           </div>
           <div>
             <small>LOCATION</small>
@@ -162,13 +167,13 @@ function scrollToSection(id) {
           <p class="section-kicker">02 / CURATED SIGNALS</p>
           <h2>100 篇精选阅读</h2>
         </div>
-        <p>来自 6 个一手技术源的外部文章索引。每周二、周五各安排 1 篇，覆盖约 50 周。</p>
+        <p>100 篇均为可核对的 AI 技术原文，来自官方技术博客或公开技术平台。中文标题为译写，保留英文原标题、来源站点与原文链接；每周随机 1–2 篇，从今天向过去归档。</p>
       </div>
 
       <div class="schedule-console">
         <div class="console-head">
           <span>UPCOMING_QUEUE</span>
-          <span>JUL 2026 → JUL 2027</span>
+          <span>{{ archiveRange }}</span>
         </div>
         <div class="queue-list">
           <a
@@ -207,7 +212,7 @@ function scrollToSection(id) {
 
       <div class="library-meta">
         <span>RESULTS / {{ String(filteredCurated.length).padStart(3, '0') }}</span>
-        <span>FREQUENCY / TUE + FRI</span>
+        <span>FREQUENCY / RANDOM 1–2 WEEKLY</span>
       </div>
 
       <div v-if="visibleCurated.length" class="curated-grid">
@@ -224,13 +229,14 @@ function scrollToSection(id) {
             <ExternalLink :size="16" aria-hidden="true" />
           </div>
           <h3>{{ article.title }}</h3>
+          <p class="original-title" lang="en">{{ article.originalTitle }}</p>
           <div class="curated-footer">
-            <span class="source-chip">{{ article.source }}</span>
+            <span class="source-chip">引用：{{ article.citation }}</span>
             <span>{{ article.topic }}</span>
           </div>
           <div class="scheduled-line">
             <CalendarDays :size="14" aria-hidden="true" />
-            <span>计划 {{ article.scheduledDate }}</span>
+            <span>发布于 {{ article.scheduledDate }}</span>
             <span>#{{ String(index + 1).padStart(2, '0') }}</span>
           </div>
         </a>
